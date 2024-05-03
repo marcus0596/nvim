@@ -37,10 +37,12 @@ return require('packer').startup(function(use)
 
 			-- LSP Support
 			{'neovim/nvim-lspconfig'},
-
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
+            {'folke/neodev.nvim'},
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'L3MON4D3/LuaSnip'},
 		}
-	}end)
+	}
+    use('AckslD/swenv.nvim')
+end)
