@@ -6,3 +6,6 @@
 vim.keymap.set("n", "<leader>gB", function()
   Snacks.picker.git_branches({ all = true })
 end, { desc = "Git Branches (all)" })
+
+vim.keymap.set("n", "<leader>bh", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
+vim.keymap.set("n", "<leader>bl", "<cmd>bnext<cr>", { desc = "Next Buffer" })
